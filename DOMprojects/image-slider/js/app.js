@@ -43,19 +43,33 @@ const imgSlide = (index) =>{
 };
 imgSlide(count);
 
-
-const playBtn = document.querySelector('playBtn');
-const stopBtn = document.querySelector('stopBtn');
- // 1. click right arrow with interval
- // 2. addeventlithener to play button to start 1.
- // 3. addeventlicthene to stop button to stop click in.
- // 4. ask Ulan how to collect intervals 
-
- function click() {
+function click() {
   bntRight.click()
  }
  for (let index = 0; index < 3; index++) {
    setTimeout(() => {
     click();
-   }, 3000)
+   }, 800)
  }
+
+const playBtn = document.querySelector('playBtn');
+const stopBtn = document.querySelector('stopBtn');
+const allIntervals = [];
+ // 1. click right arrow with interval
+ // 2. addeventlistener to play button to start 1.
+ // 3. addeventlistener to stop button to stop click in.
+ // 4. ask Ulan how to collect intervals 
+ const playFunc = function(){
+  const timer = setInterval(() => {
+      rightArrow.click();
+  }, 900);
+  allIntervals.push(timer);
+};
+ playBtn.addEventListener('click', playFunc);
+
+ stopBtn.addEventListener('click', () => {
+     allIntervals.forEach(clearInterval);
+ });
+
+
+ 

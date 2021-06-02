@@ -45,16 +45,16 @@ if (num2 > 10) {
 var age = 40;
 var yearsAsCitizen = 40;
 
-if (age >= 40 && yearsAsCitizen > 25) {
+if (age >= 40 && yearsAsCitizen > 25) { //and
   console.log('You can run for President');
 } else {
   console.log('You are not eligible to run for President');
 }
 var a = false;
-if (!a) {
+if (!a) { //no
   console.log('a is not true');
 }
-if (age >= 60 || yearsAsCitizen >= 25) {
+if (age >= 60 || yearsAsCitizen >= 25) { //or
   console.log('You are still eligible');
 }
 

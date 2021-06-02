@@ -168,7 +168,7 @@
 }
   console.log(recipe.title);
   console.log('Serves: ', recipe.servings);
-  console.log('Ingredients: ', );
+  console.log('Ingredients: ', recipe.ingredients);
   for (var i = 0; i < recipe.ingredients.length; i=i+1) {
     console.log(recipe.ingredients[i]);
   }

@@ -123,3 +123,6 @@ console.log(null == undefined); //compare loosely
 console.log(null == undefined); //object ===undefined
 
 console.log(10 === '10'); // ==loosly comparing
+
+var name2 = "Tolgonai";
+console.log(name2);

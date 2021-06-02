@@ -1,0 +1,28 @@
+body {
+    background: #e5dfd7;
+    text-align: center;
+    padding: 50px;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 10px gray;
+  }
+
+  h3 {
+    color: #f48eb1;
+    text-shadow: 1px 1px 2px blue;
+  }
+
+  h4 {
+    margin-top: 50px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  hr {
+    width: 30%;
+  }
+  
